@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html {
+    /* 1 */
+    font-family: "Inter", sans-serif !important;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.588;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 3 */
+    background: #FFFFFF;
+    color: #707070;
+    overflow-x: hidden;
+}
+
+/*
+   * Remove the margin in all browsers.
+   */
+body {
+    margin: 0;
+}
+
+:root {
+    --main-color: #FD7C65;
+    /* --main-color: #2A166D; */
+    --white: #fff;
+    --black: #000;
+    --off-black: #707070;
+    --fade-black: #212224;
+    --grey: #F8F8F8;
+    --footer-black: #222222;
+}
+
+/* ::::: INDEX PAGE ::::: */
+#navslide {
+    background: var(--black);
+    background-image: url('/assets/img/in-liquid-slide-bg.png');
+    height: auto;
+    background-size: cover;
+    width: 100%;
+}
+
+#navslide nav {
+    background: transparent !important;
+    font-size: 1rem;
+    color: var(--white) !important;
+}
+
+#navslide nav a {
+    color: var(--white) !important;
+}
+
+#navslide nav .navbar-brand h2 {
+    font-weight: 800 !important;
+    font-size: 2.3rem;
+    letter-spacing: .2rem;
+}
+
+#navslide nav .navbar-brand h5 {
+    font-size: .7rem;
+    letter-spacing: .1rem;
+}
+
+#navslide nav .navbar-toggler {
+    border: 2px solid var(--white) !important;
+}
+
+#navslide nav .navbar-toggler i {
+    color: var(--white) !important;
+    font-size: 1.7rem;
+}
+
+#navslide nav .navbar-nav {
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+#navslide nav .navbar-nav .nav-item a {
+    transform: scale(.9);
+}
+
+#navslide nav .navbar-nav .nav-item:hover a {
+    color: var(--main-color) !important;
+    transition: all .9s ease-in-out;
+    transform: scale(1);
+}
+
+#navslide nav .account .btn {
+    background: var(--main-color);
+}
+
+#navslide nav .account i {
+    font-size: 1.6rem;
+}
+
+/* slide */
+#navslide #slider {
+    padding: 2rem 0;
+}
+
+#navslide #slider button {
+    width: 3vw;
+}
+
+#navslide #slider .carousel-inner .carousel-item h1 {
+    font-size: 3.9rem;
+    font-weight: bolder;
+}
+
+#navslide #slider .carousel-inner .carousel-item .lead {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--off-black);
+}
+
+#navslide #slider .carousel-inner .carousel-item .btn {
+    background: var(--main-color);
+    color: var(--white);
+    padding: .5rem 1.8rem;
+}
+
+/* :::: widget ::: */
+#widget {
+    background: var(--fade-black);
+    height: 20vh;
+}
+
+/* :::: save time ::: */
+#savetime {
+    background: var(--black);
+    height: auto;
+}
+
+#savetime .heading .text {
+    font-size: 2.3rem;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+#savetime .heading .text>span {
+    color: var(--main-color);
+}
+
+#savetime .heading .btn {
+    background-color: var(--main-color);
+    color: var(--white);
+    font-weight: bold;
+    font-size: .7rem;
+    letter-spacing: .4px;
+}
+
+#savetime .card {
+    background: var(--fade-black);
+    color: var(--white);
+}
+
+#savetime .card h3 {
+    font-weight: bold;
+    font-size: 1.85rem;
+}
+
+#savetime .card .lead {
+    font-size: 1rem;
+}
+
+/* Special */
+#special {
+    background: #fff0ed;
+    background: linear-gradient(180deg, #fff0ed 0%, #fff0ed 27%, #ffffff 100%);
+    height: auto;
+}
+
+#special h3 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: .85rem;
+}
+
+#special .lead {
+    color: var(--off-black);
+    font-size: 1rem;
+    width: 80%;
+}
+
+#special .lead {
+    color: var(--off-black);
+    font-size: 1rem;
+    width: 80%;
+}
+
+#special #card {
+    background-image: url('/assets/img/in-liquid-card-bg.png');
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+#special #card .step-circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+#special #card .steps .row>div {
+    position: relative;
+}
+
+#special #card .steps .row>div:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--off-black);
+    opacity: .2;
+}
+
+/* payment */
+#payment {
+    background: var(--grey);
+    background-image: url('/assets/img/in-liquid-5-bg.png');
+    background-repeat: no-repeat;
+    object-fit: fill;
+    height: auto;
+    background-position: center center;
+}
+
+/* 
+::::::::::::::::::::::::::::
+        ABOUT PAGE STYLE
+::::::::::::::::::::::::::::
+*/
+
+#about__client .heading h3,
+#about_professionnal .heading h3,
+#contact__client .heading h3,
+#investment__client .heading h3 {
+    font-size: 2.45rem;
+    font-weight: bold;
+}
+
+#about__client .heading h3>span,
+#contact__client .heading h3>span,
+#investment__client .heading h3>span {
+    color: var(--main-color);
+}
+
+#about__client .heading p,
+#about_professionnal .heading p,
+#contact__client .heading p,
+#investment__client .heading p {
+    font-size: .98rem;
+    color: var(--off-black);
+}
+
+#about__client .icon {
+    width: 70px;
+    height: 70px;
+    color: var(--white);
+    background: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#about__client h3 {
+    font-size: 1.42rem;
+    font-weight: bold;
+}
+
+#about__client .lead {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--off-black);
+}
+
+#about_professionnal #card {
+    background-color: #F2F3F5;
+}
+
+#about_professionnal .card-body .post {
+    color: var(--off-black);
+    font-weight: bold;
+    font-size: .89rem;
+}
+
+#about_professionnal .card-body h4 {
+    font-weight: bold;
+    font-size: 1.29rem;
+}
+
+#about_professionnal .card-body .icons a {
+    color: var(--off-black);
+}
+
+#about_us h3 {
+    color: var(--main-color);
+    font-size: 1.78rem;
+    font-weight: bold;
+}
+
+#about_us p {
+    color: var(--off-black);
+    font-size: 1rem;
+}
+
+#about_us .btn {
+    background: var(--main-color);
+    color: var(--white);
+    font-size: .79rem;
+    font-weight: bold;
+    padding: .7rem 2.2rem;
+}
+
+/* 
+::::::::::::::::::::::::::::
+        CONTACT PAGE STYLE
+::::::::::::::::::::::::::::
+*/
+#contact__client h4 {
+    font-weight: bold;
+}
+
+#contact__client .use>span {
+    display: block;
+    margin: 1.2rem 0;
+    font-weight: bold;
+}
+
+#contact__client .use>span>i {
+    background: var(--main-color);
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--white);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+#contact__client .social a {
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+#contact__client form input:focus,
+#contact__client form textarea:focus {
+    box-shadow: none;
+    outline: none;
+    border: 1px solid var(--fade-black);
+}
+
+#contact__client .btn {
+    background: var(--main-color);
+    color: var(--white);
+    font-weight: bold;
+}
+
+#contact__client form input::placeholder,
+#contact__client form textarea::placeholder {
+    color: var(--off-black);
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+
+/* ::::GENERAL FOOTER  */
+
+/* excellence */
+#excellence {
+    background: var(--black);
+    height: auto;
+    color: var(--white);
+}
+
+/* footer */
+#footer {
+    background: var(--footer-black);
+    height: auto;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: var(--off-black);
+    font-size: .89rem;
+    font-weight: 400;
+}
+
+#footer ul li:hover a {
+    transition: all .4s ease;
+    color: var(--white);
+}
+
+#footer .copy {
+    color: var(--off-black);
+    font-size: .89rem;
+}
+
+#footer .line {
+    border: 1px solid var(--off-black);
+}
+
+
+#arrow {
+    position: fixed;
+    bottom: 40px;
+    z-index: 100;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+::::::::::::::::::::::::::::
+        INVESTMENT  PAGE STYLE
+::::::::::::::::::::::::::::
+*/
+
+
+
+
+/* ::::::::::::::::::::::: MEDIA QUERY :::::::::::::::::: */
+@media (max-width: 560px) {
+
+    /* ::::: INDEX PAGE ::::: */
+    #navslide {
+        background: var(--black);
+        background-image: url('/assets/img/in-liquid-slide-bg.png');
+        height: 60vh;
+        background-size: cover;
+        width: 100%;
+    }
+
+
+
+    #navslide nav .navbar-brand h2 {
+        font-weight: 800 !important;
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
+    }
+
+    #navslide nav .navbar-brand h5 {
+        font-size: .5.5rem;
+        letter-spacing: 0rem;
+    }
+
+
+    /* slide */
+    #navslide #slider {
+        padding: 2rem 0;
+    }
+
+    #navslide #slider button {
+        width: 3vw;
+    }
+
+    #navslide #slider .carousel-inner .carousel-item h1 {
+        font-size: 1.9rem;
+        font-weight: bolder;
+    }
+
+    #navslide #slider .carousel-inner .carousel-item .lead {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--off-black);
+    }
+
+    #navslide #slider .carousel-inner .carousel-item img {
+        display: none;
+    }
+
+
+    /* :::: widget ::: */
+    #widget {
+        background: var(--fade-black);
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    #widget h4 {
+        font-style: 1rem;
+    }
+
+    /* :::: save time ::: */
+    #savetime {
+        background: var(--black);
+        height: auto;
+    }
+
+
+    #savetime .heading .text {
+        font-size: 1.3rem;
+        color: var(--white);
+        font-weight: bolder;
+    }
+
+    #savetime .heading .text>span {
+        color: var(--main-color);
+    }
+
+    #savetime .heading .btn {
+        background-color: var(--main-color);
+        color: var(--white);
+        font-weight: bold;
+        font-size: .5rem;
+        letter-spacing: 0px;
+    }
+
+
+    #special #card .steps .row>div:not(:last-child)::after {
+        display: none;
+    }
+
+}
